@@ -5,8 +5,10 @@
 def canUnlockAll(boxes):
     """ Check to see if it's possible to unlock all these boxes """
     keys, search = [], []
-    keys.append(0)  # we have the 0th key
 
+    keys.append(0)  # we have the 0th key
+    if not boxes:
+        return False
     while keys:  # get the next key
         current = keys.pop()
 
