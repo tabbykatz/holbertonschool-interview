@@ -14,7 +14,7 @@ def canUnlockAll(boxes):
         if current not in search:
             search.append(current)  # add current to list searched
             for key in boxes[current]:  # add keys to our keys list
-                if key <= len(boxes):
+                if key < len(boxes):
                     keys.append(key)
 
     return len(search) == len(boxes)  # have we searched all the rooms? T/F
