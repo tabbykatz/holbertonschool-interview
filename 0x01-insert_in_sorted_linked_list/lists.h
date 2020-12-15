@@ -1,7 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
-/* had to include this for size_t, yo */
+
 #include <stddef.h>
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
