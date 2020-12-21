@@ -125,6 +125,7 @@ int height(heap_t *root)
 
 /**
  * parent - Finds the parent node
+ * @root: root node
  * Return: found parent
  **/
 heap_t *parent(heap_t *root)
